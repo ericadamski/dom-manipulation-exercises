@@ -1,0 +1,330 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="exercise">
+      <div class="exercise__information">
+        <h1 class="exercise__title">
+          Some small challenges to keep your DOM manipulation skills on fleek!
+          💪
+        </h1>
+        <p class="exercise__description">
+          If you want to give them a whurl you can head over to
+          <a href="https://github.com/ericadamski/dom-manipulation-exercises"
+            >the Github repo</a
+          >
+          where you can fork and clone the repository! The configuration to host
+          your solutions once you have completed them is in the repository, so
+          you should be able to easly share your awesomeness with
+          <a href="https://now.sh"><code>now</code></a
+          >. Good Luck! <br /><br />
+          You can checkout some potential solutions
+          <a href="https://codepen.io/ericadamski/pen/pqaNYG">here</a> or
+          <a href="https://codepen.io/ericadamski/full/pqaNYG">here</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">1. Adding Some Images</h2>
+        <p class="exercise__description">
+          You are given a DOM element like
+          <code class="html">&lt;ul class="iamge-list"&gt;&lt;/ul&gt;</code>.
+          Your job is to add <strong>10</strong> images to that list. For the
+          <code>src</code> attribute you can use
+          <code>https://picsum.photos/200</code>. Please make sure that you are
+          writing sematically correct HTML lists, meaning that you must only
+          have <code>&lt;li&gt;</code> children of a <code>&lt;ul&gt;</code>.
+        </p>
+      </div>
+      <div class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <ul
+          class="image-list"
+          style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;"
+        ></ul>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">2. Open A Dialog</h2>
+        <p class="exercise__description">
+          You are given a DOM <code>&lt;button&gt;</code> element like
+          <code class="html"
+            >&lt;button id="open-dialog"&gt;Open Dialog&lt;/button&gt;</code
+          >
+          and a pre-fabricated modal dialog which resembles
+          <code>&lt;div id="modal-to-open" class="modal"&gt;&lt;/div&gt;</code>.
+          Your job is to show the dialog once the button has been clicked.
+        </p>
+      </div>
+      <div class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <button id="open-dialog">Open Dialog</button>
+        <div id="modal-to-open" class="modal modal--hidden">
+          <div class="modal__overlay"></div>
+          <div class="modal__content"><h1>You Win! 🎄</h1></div>
+        </div>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">3. Follow Me!</h2>
+        <p class="exercise__description">
+          You are given a DOM element like
+          <code class="html">&lt;div class="follow-me"&gt;&lt;/div&gt;</code>.
+          Your job is have that element follow your mouse inside the result
+          container. A hint, the result container for this exercise has an
+          <code>id</code> of <code>follow-me-parent</code>.
+        </p>
+      </div>
+      <div id="follow-me-parent" class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <div class="follow-me"><h1>🐄</h1></div>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">4. Children</h2>
+        <p class="exercise__description">
+          You are given a list of DOM elements inside a
+          <code class="html">&lt;ul class="has-children"&gt;&lt;/div&gt;</code>.
+          Your job is to give the first child a
+          <strong style="color:blue">blue</strong> background, the last child a
+          <strong style="color:palevioletred">palevioletred</strong> background
+          and the 9th child a
+          <strong style="color:green">green</strong> background. Then make all
+          of the even numbers <strong style="color:lime">lime</strong>.
+        </p>
+      </div>
+      <div class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <ul class="has-children">
+          <li>1st child</li>
+          <li>2nd child</li>
+          <li>3rd child</li>
+          <li>4th child</li>
+          <li>5th child</li>
+          <li>6th child</li>
+          <li>7th child</li>
+          <li>8th child</li>
+          <li>9th child</li>
+          <li>10th child</li>
+          <li>11th child</li>
+          <li>12th child</li>
+          <li>13th child</li>
+          <li>14th child</li>
+          <li>15th child</li>
+          <li>16th child</li>
+          <li>17th child</li>
+        </ul>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">5. Form Values</h2>
+        <p class="exercise__description">
+          You are given a DOM element
+          <code class="html">&lt;p class="wrote"&gt;&lt;/p&gt;</code> and an
+          <code>&lt;input type="text" /&gt;</code>. Your job is output what ever
+          is typed in the <strong>input</strong> into the
+          <strong>p</strong> tag.
+        </p>
+      </div>
+      <div class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <input
+          name="input"
+          type="text"
+          placeholder="type here"
+          autocomplete="off"
+        />
+        <p class="wrote"></p>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">6. Form Validation</h2>
+        <p class="exercise__description">
+          You are given two DOM elements like
+          <code>&lt;input type="text" /&gt;</code>. Your job is compare the two
+          values and make sure that the first ones value is not less than the
+          second one. If the second number is larger show the error message that
+          has been given in
+          <code>&lt;div class="error error--hidden"&gt;&lt;/div&gt;</code> and
+          then add some css to turn the label of the second value
+          <strong style="color:red">red</strong>.
+        </p>
+      </div>
+      <div class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <div class="field">
+          <label for="large-value">Value 1:</label>
+          <input
+            name="large-value"
+            type="text"
+            placeholder="enter a number"
+            autocomplete="off"
+          />
+        </div>
+        <div class="field">
+          <label for="smaller-value">Value 2:</label>
+          <input
+            name="smaller-value"
+            type="text"
+            placeholder="enter another number"
+            autocomplete="off"
+          />
+          <div class="error error--hidden">
+            Value 2 must be smaller that Value 1
+          </div>
+        </div>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="exercise__information">
+        <h2 class="exercise__title">7. Working With Objects</h2>
+        <p class="exercise__description">
+          You are given an object called <code>data</code>, it contains a list
+          of pictures. Your job is to display that list of pictures with their
+          author and file format. You can place these elements inside the
+          provided <code>&lt;ul class="photos"&gt;</code>
+        </p>
+      </div>
+      <div class="exercise__result">
+        <!-- The important HTML for the exercies is in here  ⬇️ -->
+        <ul class="photos exercise__photos--object"></ul>
+        <!-- The important HTML for the exercies is in here ⬆️ -->
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    const data = {
+      photos: [
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0000_yC-Yzbqy7PY.jpeg",
+          id: 0,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/yC-Yzbqy7PY"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0001_LNRyGwIJr5c.jpeg",
+          id: 1,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/LNRyGwIJr5c"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0002_N7XodRrbzS0.jpeg",
+          id: 2,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/N7XodRrbzS0"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0003_Dl6jeyfihLk.jpeg",
+          id: 3,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/Dl6jeyfihLk"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0004_y83Je1OC6Wc.jpeg",
+          id: 4,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/y83Je1OC6Wc"
+        },
+        {
+          format: "jpeg",
+          width: 5245,
+          height: 3497,
+          filename: "0005_LF8gK8-HGSg.jpeg",
+          id: 5,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/LF8gK8-HGSg"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0006_tAKXap853rY.jpeg",
+          id: 6,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/tAKXap853rY"
+        },
+        {
+          format: "jpeg",
+          width: 4728,
+          height: 3168,
+          filename: "0007_BbQLHCpVUqA.jpeg",
+          id: 7,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/BbQLHCpVUqA"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3744,
+          filename: "0008_xII7efH1G6o.jpeg",
+          id: 8,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/xII7efH1G6o"
+        },
+        {
+          format: "jpeg",
+          width: 5616,
+          height: 3672,
+          filename: "0009_ABDTiLqDhJA.jpeg",
+          id: 9,
+          author: "Alejandro Escamilla",
+          author_url: "https://unsplash.com/@alejandroescamilla",
+          post_url: "https://unsplash.com/photos/ABDTiLqDhJA"
+        }
+      ].map(photo => ({
+        ...photo,
+        image_url: `https://picsum.photos/200/200?image=${photo.id}`
+      }))
+    };
+  </script>
+  <script src="index.js"></script>
+</html>

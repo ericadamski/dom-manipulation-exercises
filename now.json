@@ -1,0 +1,11 @@
+{
+  "name": "dom-exercises",
+  "alias": ["dom-exercises"],
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@now/html-minifier" },
+    { "src": "index.js", "use": "@now/static" },
+    { "src": "index.css", "use": "@now/html-minifier" },
+    { "src": "main.css", "use": "@now/html-minifier" }
+  ]
+}
